@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ROE-Checker</title>
 </head>
 <body>
-    
+    <header>
+        <h1>ROE-Checker</h1>
+    </header>
+    <main>
+        <div>
+            <p>Check the return of your future real state invesments here:</p>
+        </div>
+        <div class="input-area">
+            <div class="values-are">
+                <div class="rent-area">
+                    <label for="rent">Rent</label>
+                    <input id="rent" name="rent" type="number" class="text-input" required>
+                </div>
+                <div class="credit-area">
+                    <label for="credit">Credit payment</label>
+                    <input id="credit" name="credit" type="number" class="text-input" required>
+                </div>
+                <div class="equity-area">
+                    <label for="equity">Equity</label>
+                    <input id="equity" name="equity" type="number" class="text-input" required>
+                </div>
+            </div>
+            <button data-type="submit" class="btn-check">Check now</button>
+        </div>
+        <div class="output-area">
+            <p class="output-title"></p>
+            <p class="output-description"></p> <!--consider span later <span id=""></span>-->
+        </div>
+    </main>
 </body>
 </html>
