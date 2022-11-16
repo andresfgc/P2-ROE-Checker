@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: white;
+    color: darkslategray;
+    text-align: center;
+}
+
+.input-area {
+    margin-top: 50px;
+}
+
+.values-area {
+    display: flex;
+    margin-bottom: 20px;
+}
