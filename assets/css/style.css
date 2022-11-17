@@ -13,11 +13,16 @@ body {
 
 .values-area {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     justify-content: space-evenly;
 }
 
 .rent-area, .credit-area, .equity-area {
     display: flex;
     flex-direction: column;
+}
+
+.btn-check {
+    padding: 10px 30px;
+    font-size: 20px;
 }
