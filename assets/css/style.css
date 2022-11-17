@@ -14,4 +14,10 @@ body {
 .values-area {
     display: flex;
     margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.rent-area, .credit-area, .equity-area {
+    display: flex;
+    flex-direction: column;
 }
