@@ -65,3 +65,14 @@ function displayGoodRoeAnswer() {
     document.getElementById('output-title').textContent = 'ROE is good';
     document.getElementById('output-description').textContent = `this investment will generate a ROE of ${calculateAnswer()[0]}% which is a good value considering the risks. Dont forget to consider costs of maintenance, property management and taxes for your final check.`;
 }
+
+function SendMail() {
+    var params = {
+        from_name : document.getElementById("fullName").value,
+        email_id : document.getElementById("email_id").value,
+        message : document.getElementById("message").value,
+    }
+    emailjs.send("service_ezv0pio", "template_f6ocuwt", params).then(function(res) {
+        alert("success!" + res.status);
+    })
+}
