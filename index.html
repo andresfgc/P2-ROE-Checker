@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>ROE-Checker</title>
 </head>
 <body>
@@ -39,13 +40,16 @@
         <div class="output-area hide" id="results">
             <p id="output-title"></p>
             <p id="output-description"></p> <!--consider span later <span id=""></span>-->
-            <input type="text" placeholder="Full Name" required><br></br>
-            <input type="email" placeholder="Email" required><br></br>
-            <textarea placeholder="Message" required></textarea><br></br>
+
+            <input type="text" id="fullName" placeholder="Full Name" required><br></br>
+            <input type="email" id="email_id" placeholder="Email" required><br></br>
+            <textarea id="message" placeholder="Message" required></textarea><br></br>
             <button>send</button>
             
         </div>
     </main>
     <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('UZqjODEvZW8Cc5zm6')</script>
 </body>
 </html>

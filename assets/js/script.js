@@ -52,7 +52,7 @@ function calculateAnswer() {
 }
 
 function displayNegativeRoeAnswer() {
-    document.getElementById('output-title').textContent = 'ROE is negativ';
+    document.getElementById('output-title').textContent = 'ROE is bad';
     document.getElementById('output-description').textContent = `this investment will generate a ROE of ${calculateAnswer()[0]}% and therefore only monthly costs. We recommend you to discuss to your bank the possibility of adjusting the monthly credit payments or find another property.`;
 }
 
