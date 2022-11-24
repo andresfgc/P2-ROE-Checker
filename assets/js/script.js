@@ -39,11 +39,11 @@ function calculateAnswer() {
 
     let roe = ((operand1 - operand2) / operand3)* 100;
 
-    if(roe < 0) {
+    if(roe <= 0) {
         return [roe, "negativeRoe"];
     } else if(roe > 0 && roe < 5) {
         return [roe, "lowRoe"];
-    } else if(roe > 5) {
+    } else if(roe >= 5) {
         return [roe, "goodRoe"];
     } else {
         alert('Unknown result type ${roe}');
@@ -53,15 +53,15 @@ function calculateAnswer() {
 
 function displayNegativeRoeAnswer() {
     document.getElementById('output-title').textContent = 'ROE is negativ';
-    document.getElementById('output-description').textContent = '`this investment will generate a negativ ROE of ${calculateAnser()%} and therefore only monthly costs. Therefore we recommend you to discuss to your bank the possibility of adjusting the monthly credit payments or find another property.`';
+    document.getElementById('output-description').textContent = `this investment will generate a ROE of ${calculateAnswer()[0]}% and therefore only monthly costs. We recommend you to discuss to your bank the possibility of adjusting the monthly credit payments or find another property.`;
 }
 
 function displayLowRoeAnswer() {
     document.getElementById('output-title').textContent = 'ROE is positiv but low';
-    document.getElementById('output-description').textContent = '`this investment will generate a ROE of ${calculateAnswer()%} but it may not be enough considering the risks. Therefore we recommend you to find another property with at least a ROE of 5%.`';
+    document.getElementById('output-description').textContent = `this investment will generate a ROE of ${calculateAnswer()[0]}% but it may not be enough considering the risks. Therefore we recommend you to find another property with at least a ROE of 5%.`;
 }
 
 function displayGoodRoeAnswer() {
     document.getElementById('output-title').textContent = 'ROE is good';
-    document.getElementById('output-description').textContent = '`this investment will generate a ROE of ${calculateAnswer()%} which is a good value considering the risks. Dont forget to consider costs of maintenance, property management and taxes for your final check.`';
+    document.getElementById('output-description').textContent = `this investment will generate a ROE of ${calculateAnswer()[0]}% which is a good value considering the risks. Dont forget to consider costs of maintenance, property management and taxes for your final check.`;
 }
