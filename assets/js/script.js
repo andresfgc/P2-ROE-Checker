@@ -52,16 +52,19 @@ function calculateAnswer() {
 }
 
 function displayNegativeRoeAnswer() {
+    document.getElementById('contact').classList.remove('message-area');
     document.getElementById('output-title').textContent = 'ROE is bad';
     document.getElementById('output-description').textContent = `this investment will generate a ROE of ${calculateAnswer()[0]}% and therefore only monthly costs. We recommend you to discuss to your bank the possibility of adjusting the monthly credit payments or find another property.`;
 }
 
 function displayLowRoeAnswer() {
+    document.getElementById('contact').classList.remove('message-area');
     document.getElementById('output-title').textContent = 'ROE is positiv but low';
     document.getElementById('output-description').textContent = `this investment will generate a ROE of ${calculateAnswer()[0]}% but it may not be enough considering the risks. Therefore we recommend you to find another property with at least a ROE of 5%.`;
 }
 
 function displayGoodRoeAnswer() {
+    document.getElementById('contact').classList.remove('message-area');
     document.getElementById('output-title').textContent = 'ROE is good';
     document.getElementById('output-description').textContent = `this investment will generate a ROE of ${calculateAnswer()[0]}% which is a good value considering the risks. Dont forget to consider costs of maintenance, property management and taxes for your final check.`;
 }
