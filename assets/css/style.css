@@ -5,16 +5,48 @@ body {
     background-color: white;
     color: darkslategray;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.home_background {
+    background: url(../images/home_background.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    background-position: 50% 50%;
+}
+
+h1 {
+    margin: 0;
+    background-color: #00000073;
+    color: #84b1e2;
 }
 
 .input-area {
     margin-top: 50px;
+    padding: 20px;
+    background-color: #00000073;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input_area_background {
+    background-color: #00000073;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .values-area {
     display: flex;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     justify-content: space-evenly;
+    color: #84b1e2;
 }
 
 .rent-area, .credit-area, .equity-area {
@@ -22,11 +54,50 @@ body {
     flex-direction: column;
 }
 
-.btn-check {
-    padding: 10px 30px;
+.text-input {
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 33px;
     font-size: 20px;
+    color: white;
+    background-color: #84b1e2;
+    border-color: #84b1e2;
+    border-radius: 5px;
 }
 
 .message-area {
     display: none;
+}
+
+textarea {
+    width: 70%;
+    height: 150px;
+    font-family: 'Merriweather', serif;
+  }
+
+/* --------------------------------------------> media queries */
+
+@media only screen and (max-width: 900px){
+    .values-area {
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        margin: 30px auto;
+    }
+
+    .input-area {
+        width: 70%;
+    }
+
+    .text-input {
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-top: 20px;
+    }
 }

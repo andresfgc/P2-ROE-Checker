@@ -12,36 +12,39 @@
 
     <title>ROE-Checker</title>
 </head>
-<body>
+<body class="home_background">
     <header>
         <h1>ROE-Checker</h1>
     </header>
     <main>
         <div>
-            <p>Check the return of your future real state invesments here:</p>
+            <h2>Check the return of your future real state invesments here:</h2>
         </div>
         <div class="input-area">
-            <div class="values-area">
-                <div class="rent-area">
-                    <label for="rent">Rent</label>
-                    <input id="rent" name="rent" type="number" class="text-input" placeholder="per month" required>
-                </div>
-                <div class="credit-area">
-                    <label for="credit">Credit payment</label>
-                    <input id="credit" name="credit" type="number" placeholder="per month" class="text-input" required>
-                </div>
-                <div class="equity-area">
-                    <label for="equity">Equity</label>
-                    <input id="equity" name="equity" type="number" placeholder="own capital"class="text-input" required>
+            <div class="input_area_background">
+                <div class="values-area">
+                    <div class="rent-area">
+                        <label for="rent">Rent</label>
+                        <input id="rent" name="rent" type="number" class="text-input" placeholder="per month" required>
+                    </div>
+                    <div class="credit-area">
+                        <label for="credit">Credit payment</label>
+                        <input id="credit" name="credit" type="number" placeholder="per month" class="text-input" required>
+                    </div>
+                    <div class="equity-area">
+                        <label for="equity">Equity</label>
+                        <input id="equity" name="equity" type="number" placeholder="own capital"class="text-input" required>
+                    </div>
+                    <button data-type="submit" class="btn-check">Check now</button>
                 </div>
             </div>
-            <button data-type="submit" class="btn-check">Check now</button>
         </div>
         <div class="output-area hide" id="results">
             <p id="output-title"></p>
             <p id="output-description"></p> <!--consider span later <span id=""></span>-->
         </div>
         <div id="contact" class="message-area">
+            <h2>Contact us for a free advisory session</h2>
             <input type="text" id="fullName" placeholder="Full Name" required><br></br>
             <input type="email" id="email_id" placeholder="Email" required><br></br>
             <textarea id="message" placeholder="Message" required></textarea><br></br>
