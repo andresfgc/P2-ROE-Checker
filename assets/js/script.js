@@ -33,9 +33,9 @@ function runAnalysis() {
 
 function calculateAnswer() {
 
-    let operand1 = document.getElementById('rent').value;
-    let operand2 = document.getElementById('credit').value;
-    let operand3 = document.getElementById('equity').value;
+    let operand1 = checkRent();
+    let operand2 = checkCredit();
+    let operand3 = checkEquity();
 
     let roe = ((operand1 - operand2) / operand3)* 100;
 
@@ -48,6 +48,36 @@ function calculateAnswer() {
     } else {
         alert('Unknown result type ${roe}');
         throw 'Unknown result type ${roe}.Aborting';
+    }
+}
+
+function checkRent() {
+    let operand1 = document.getElementById('rent').value;
+    if (operand1 == "") {
+        alert("Rent must be filled out");
+        throw 'Rent must be filled out".Aborting';
+    } else {
+        return operand1;
+    }
+}
+
+function checkCredit() {
+    let operand2 = document.getElementById('credit').value;
+    if (operand2 == "") {
+        alert("Credit payment must be filled out");
+        throw 'Credit payment must be filled out".Aborting';
+    } else {
+        return operand2;
+    }
+}
+
+function checkEquity() {
+    let operand3 = document.getElementById('equity').value;
+    if (operand3 == "") {
+        alert("Equity must be filled out");
+        throw 'Equity must be filled out".Aborting';
+    } else {
+        return operand3;
     }
 }
 
