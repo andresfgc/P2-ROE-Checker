@@ -56,6 +56,12 @@ function checkRent() {
     if (operand1 == "") {
         alert("Rent must be filled out");
         throw 'Rent must be filled out".Aborting';
+    } else if(operand1 == 0) {
+        alert("Rent must be higher than zero");
+        throw 'Rent must be higher than zero".Aborting';
+    } else if(operand1 < 0) {
+        alert("Rent must be a positive value");
+        throw 'Rent must be a positive value".Aborting';
     } else {
         return operand1;
     }
@@ -66,6 +72,12 @@ function checkCredit() {
     if (operand2 == "") {
         alert("Credit payment must be filled out");
         throw 'Credit payment must be filled out".Aborting';
+    } else if(operand2 == 0) {
+        alert("Credit payment must be higher than zero");
+        throw 'Credit payment must be higher than zero".Aborting';
+    } else if(operand2 < 0) {
+        alert("Credit payment must be a positive value");
+        throw 'Credit payment must be a positive value".Aborting';
     } else {
         return operand2;
     }
@@ -76,6 +88,12 @@ function checkEquity() {
     if (operand3 == "") {
         alert("Equity must be filled out");
         throw 'Equity must be filled out".Aborting';
+    } else if(operand3 == 0) {
+        alert("Equity must be higher than zero");
+        throw 'Equity must be higher than zero".Aborting';
+    } else if(operand3 < 0) {
+        alert("Equity must be a positive value");
+        throw 'Equity must be a positive value".Aborting';
     } else {
         return operand3;
     }
