@@ -68,8 +68,26 @@ button {
     border-radius: 5px;
 }
 
-.message-area {
+.output-area {
+    background-color: #00000073;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    color: #84b1e2;
+}
+
+.message-area, .hide {
     display: none;
+}
+
+#contact {
+    background-color: #00000073;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    color: #84b1e2;
 }
 
 textarea {
