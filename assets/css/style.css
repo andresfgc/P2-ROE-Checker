@@ -50,6 +50,42 @@ h1 {
 .rent-area, .credit-area, .equity-area {
     display: flex;
     flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+
+.rent-explanation {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: #84b1e2;
+    color: #fff;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-color: #84b1e2;
+    font-size: 12px;
+
+}
+
+.rent-explanation::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #84b1e2 #0000 #0000 #0000;
+}
+
+.rent-area:hover .rent-explanation {
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
 }
 
 .text-input {
