@@ -122,11 +122,44 @@ function displayGoodRoeAnswer() {
 
 function SendMail() {
     var params = {
-        from_name : document.getElementById("fullName").value,
-        email_id : document.getElementById("email_id").value,
-        message : document.getElementById("message").value,
+        from_name : checkName(),
+        email_id : checkEmail(),
+        message : checkMessage(),
     }
     emailjs.send("service_ezv0pio", "template_f6ocuwt", params).then(function(res) {
         alert("success!" + res.status);
     })
+}
+
+function checkName() {
+    let from_name = document.getElementById('fullName').value;
+    if (from_name == "") {
+        alert("Name must be filled out");
+        throw 'Name must be filled out".Aborting';
+    } else {
+        return from_name;
+    }
+}
+
+function checkEmail() {
+    let email_id = document.getElementById('email_id').value;
+    if (email_id == "") {
+        alert("Email must be filled out");
+        throw 'Email must be filled out".Aborting';
+    } else if(!email_id.includes('@')) {
+        alert("Email is incorrect");
+        throw 'Email is incorrect".Aborting';
+    }else {
+        return email_id;
+    }
+}
+
+function checkMessage() {
+    let message = document.getElementById('message').value;
+    if (message == "") {
+        alert("Message must be filled out");
+        throw 'Message must be filled out".Aborting';
+    } else {
+        return message;
+    }
 }
