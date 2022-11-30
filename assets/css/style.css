@@ -81,6 +81,10 @@ button {
     display: none;
 }
 
+.message-text {
+    font-family: 'Merriweather', serif;
+}
+
 #contact {
     background-color: #00000073;
     border-radius: 5px;
@@ -93,7 +97,6 @@ button {
 textarea {
     width: 70%;
     height: 150px;
-    font-family: 'Merriweather', serif;
   }
 
 /* --------------------------------------------> media queries */
