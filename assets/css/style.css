@@ -10,13 +10,11 @@ body {
 }
 
 .home_background {
-    background: url(../images/home_background.jpg) no-repeat;
+    background: url(../images/home_background.jpg) fixed center center no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-attachment: fixed;
-    vertical-align: middle;
-    width: 100%;
-    height: auto;
-    background-position: 50% 50%;
 }
 
 h1 {
