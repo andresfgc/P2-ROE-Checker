@@ -55,7 +55,9 @@ ROE-Checker is a site that wants to help people achieving their financial goals 
 
 - __Thank_you Message__
 
-  - This section will let the user know that ROE Checker has received the message.
+  - This section will let the user know that ROE-Checker Team has received the message.
+  - User will also receive the message via Email.
+  
 
 ![Thank_you Message](/media/Thankyou_message.PNG)
 
@@ -98,6 +100,10 @@ The project was deployed to GitHub Pages using the following steps...
 6. wait a few minutes and then reload the page, you will see the now published site [link](https://andresfgc.github.io/ROE-Checker/) in the "GitHub Pages" section.
 
 ## Credits
+
+### Email function
+
+- The send Email function was configurated with [emailjs.com](https://www.emailjs.com/)
 
 ### Media
 
