@@ -54,7 +54,7 @@ h1 {
     cursor: pointer;
 }
 
-.rent-explanation {
+.rent-explanation, .credit-explanation, .equity-explanation {
     position: absolute;
     left: 50%;
     top: 0;
@@ -82,7 +82,39 @@ h1 {
     border-color: #84b1e2 #0000 #0000 #0000;
 }
 
+.credit-explanation::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #84b1e2 #0000 #0000 #0000;
+}
+
+.equity-explanation::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #84b1e2 #0000 #0000 #0000;
+}
+
 .rent-area:hover .rent-explanation {
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.credit-area:hover .credit-explanation {
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.equity-area:hover .equity-explanation {
     top: -130%;
     visibility: visible;
     opacity: 1;

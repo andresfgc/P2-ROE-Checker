@@ -24,15 +24,17 @@
             <div class="input_area_background">
                 <div class="values-area">
                     <div class="rent-area">
-                        <span class="rent-explanation">Explanation about rent values</span>
-                        <label for="rent">Rent</label>
+                        <span class="rent-explanation">Amount of money that you will receive <br>in exchange for the use of property.</span>
+                        <label for="rent" class="rent-label">Rent</label>
                         <input id="rent" name="rent" type="number" class="text-input" placeholder="per month" required />
                     </div>
                     <div class="credit-area">
+                        <span class="credit-explanation">Amount of money that you will pay <br>every month toward your mortage.</span>
                         <label for="credit">Credit payment</label>
                         <input id="credit" name="credit" type="number" placeholder="per month" class="text-input" required />
                     </div>
                     <div class="equity-area">
+                        <span class="equity-explanation">Amount of money that you <br>will have to invest.</span>
                         <label for="equity">Equity</label>
                         <input id="equity" name="equity" type="number" placeholder="own capital"class="text-input" required />
                     </div>
@@ -55,5 +57,8 @@
     <script src="assets/js/script.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">emailjs.init('UZqjODEvZW8Cc5zm6')</script>
+
+    <!--font awesome script-->
+    <script src="https://kit.fontawesome.com/a5f2e2fafd.js" crossorigin="anonymous"></script>
 </body>
 </html>
