@@ -34,74 +34,49 @@ ROE-Checker is a site that wants to help people achieving their financial goals 
 
 ### Existing Features
 
-- __Navigation Bar__
+- __ROE Calculator__
 
-  - The responsive navigation bar includes links to the Logo, Home page, Dogs and Sign Up page and it has the same design in all pages.
-  - This nagivation bar allows users to easily navigate between pages. 
+  - The ROE calculator section has three values(rent, credit payment & equity) to determine the return on equity.
+  - Each value wil give you a description when hovering over it with your mouse or writing a value inside the space.
 
-![Nav Bar](/media/nav_bar.PNG)
+![ROE Calculator](/media/ROE_calculator.PNG)
 
-- __The landing page image__
+- __ROE Evaluator__
 
-  - This section separate the navigation bar text and the dog-overview header text giving the user a time to read correctly the website. 
+  - This section shows the result of the ROE Calculator. It has three different results depending of the ROE porcentage.
 
-![landing page image](/media/landing_page_image.PNG)
+![ROE Evaluator](/media/ROE_evaluator.PNG)
 
-- __Dog overview section__
+- __Contact form__
 
-  - The dog overview will allow the user to directly see available dogs for adoption.
+  - The contact form will give the user the opportunity to request a free advisory session.
 
-![dog overview](/media/dog_overview.PNG)
+![Contact form](/media/contact_form.PNG)
 
-- __Sign Up section__
+- __Thank_you Message__
 
-  - This section will allow the user to go directly to the sign up page.
+  - This section will let the user know that ROE Checker has received the message.
 
-![sign up](/media/sign_up.PNG)
-
-- __Story section__
-
-  - This section will allow the user to see some photos of recently adopted dogs.
-  - This user will see to tha value of adoption and get potentially motivated to sign up.
-
-![story section](/media/stories.PNG)
-
-- __Footer__
-
-  - The footer will allow the user to find and follow the social media sites for Adogme. The links will open a new tab.
-
-![story section](/media/footer.PNG)
-
-- __dog overview dogs page__
-
-  - This page offers information on more dogs for adoption.
-  - This will allow the user to see more dogs and get potentially more motivated to sing up for adoption.
-![dog overview dogs page](/media/dog_overview_dogssite.PNG)
-
-- __sign up page__
-
-  - This page will allow the user to get signed up to Adogme to get in contact for adoption. The user will be asked to submit their full name, email address, phone number and dog name if the user already know which dog to adopt.
-![sign up page](/media/signup_page.PNG)
+![Thank_you Message](/media/Thankyou_message.PNG)
 
 - __Features left to implement__
 
-  - The user will be redirected to sign up each time they click on a dog image, name or the adopt me button.
+  - The user would be able to share more detailed information about the real estate he/she is evaluating (location, bank interest rates, images, etc.).
 
 ## Testing
 
-For ideal responsive design five media queries were included and tested across diferent browsers and devices. The grid function was used to offer a solid appareance when showing the dog overview.
-
-Using a concrete high of 190px and different images it was possible to provide similar image sizes for each dog container.
+For ideal responsive design a media query for a max-widths-screen of 900px was included and tested across diferent browsers and devices.
 
 ## Validator Testing
 
 - HTML
 
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fandresfgc.github.io%2Fp1%2Findex.html)
+  - No errors were returned when passing through the official [W3C validator]()
 
 - CSS
 
-  - No errors were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
+  - No errors were returned when passing through the official [(Jigsaw) validator]()
+  
 
 ## Deployment
 
