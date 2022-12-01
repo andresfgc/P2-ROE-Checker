@@ -65,7 +65,7 @@ ROE-Checker is a site that wants to help people achieving their financial goals 
 
 ## Testing
 
-For ideal responsive design a media query for a max-widths-screen of 900px was included and tested across diferent browsers and devices.
+For ideal responsive design a media query for a max-width-screen of 900px was included and tested across diferent browsers and devices.
 
 ## Validator Testing
 
