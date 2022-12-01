@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', function(){
-    let buttons = document.getElementsByTagName('button');
-
-    for (let button of buttons) {
-        button.addEventListener('click', function(){
-            runAnalysis();
-        })
-    }
-})
+    document.getElementById("button-message").addEventListener('click', function(){
+        SendMail();
+    });
+    document.getElementById("check-button").addEventListener('click', function(){
+        runAnalysis();
+    });
+});
 
 
 function runAnalysis() {
@@ -119,7 +118,7 @@ function SendMail() {
         from_name : checkName(),
         email_id : checkEmail(),
         message : checkMessage(),
-    }
+    };
     document.getElementById('fullName').classList.add('hide');
     document.getElementById('email_id').classList.add('hide');
     document.getElementById('message').classList.add('hide');
@@ -127,7 +126,7 @@ function SendMail() {
     document.getElementById('thank-you-title').textContent = "Thank you for getting in touch!";
     document.getElementById('thank-you-message').textContent = "We will contact you back within the next 24 hours.";
     emailjs.send("service_ezv0pio", "template_f6ocuwt", params).then(function(res) {
-    })
+    });
 }
 
 function checkName() {

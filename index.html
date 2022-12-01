@@ -38,7 +38,7 @@
                         <label for="equity">Equity</label>
                         <input id="equity" name="equity" type="number" placeholder="own capital" class="text-input" required>
                     </div>
-                    <button data-type="submit" class="btn-check">Check now</button>
+                    <button id="check-button" data-type="submit" class="btn-check">Check now</button>
                 </div>
             </div>
             <div class="output-area hide" id="results">
@@ -51,12 +51,12 @@
                 <input type="text" id="fullName" placeholder="Full Name" class="message-text" required><br>
                 <input type="email" id="email_id" placeholder="Email" class="message-text" required><br>
                 <textarea id="message" placeholder="Message" class="message-text" required></textarea><br>
-                <button id="button-message" onclick="SendMail()">Send</button>
+                <button id="button-message">Send</button>
             </div>
         </div>
     </main>
-    <script src="assets/js/script.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">emailjs.init('UZqjODEvZW8Cc5zm6')</script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

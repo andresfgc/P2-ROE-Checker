@@ -67,6 +67,10 @@ ROE-Checker is a site that wants to help people achieving their financial goals 
 
 For ideal responsive design a media query for a max-width-screen of 900px was included and tested across diferent browsers and devices.
 
+## Bugs
+
+On Apple mobile devices the background stays in a relative similar position while the autozoom shows the rent, credit payment and equity spaces bigger. On Huawei mobile devices tha background resizes itself a bit when clicking inside the form or scrolling down/up.
+
 ## Validator Testing
 
 - HTML
@@ -76,6 +80,10 @@ For ideal responsive design a media query for a max-width-screen of 900px was in
 - CSS
 
   - No errors were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fandresfgc.github.io%2FROE-Checker%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=es)
+
+- JS
+
+  - No errors were returned when passing through the official [jshint](https://jshint.com/)
   
 
 ## Deployment
