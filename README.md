@@ -69,7 +69,7 @@ For ideal responsive design a media query for a max-width-screen of 900px was in
 
 ## Bugs
 
-On Apple mobile devices the background stays in a relative similar position while the autozoom shows the rent, credit payment and equity spaces bigger. On Huawei mobile devices tha background resizes itself a bit when clicking inside the form or scrolling down/up.
+On Apple mobile devices the background stays in a relative similar position while the autozoom shows bigger rent, credit payment and equity spaces. On Huawei mobile devices the background resizes itself a bit when clicking inside the form or scrolling down/up.
 
 ## Validator Testing
 
