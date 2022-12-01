@@ -71,38 +71,26 @@ For ideal responsive design a media query for a max-width-screen of 900px was in
 
 - HTML
 
-  - No errors were returned when passing through the official [W3C validator]()
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fandresfgc.github.io%2FROE-Checker%2F)
 
 - CSS
 
-  - No errors were returned when passing through the official [(Jigsaw) validator]()
+  - No errors were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fandresfgc.github.io%2FROE-Checker%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=es)
   
 
 ## Deployment
 
 The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/andresfgc/p1)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/andresfgc/ROE-Checker)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 3. In the left-nav-menu click on "page".
 4. Under "Source", click the dropdown called "None" and select "Main" and save.
 5. The page will automatically refresh.
-6. wait a few minutes and then reload the page, you will see the now published site [link](https://andresfgc.github.io/p1/) in the "GitHub Pages" section.
+6. wait a few minutes and then reload the page, you will see the now published site [link](https://andresfgc.github.io/ROE-Checker/) in the "GitHub Pages" section.
 
 ## Credits
 
-### Structure
-- The head structure idea was taken from the [Love Running Project](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode)
-- The body dog overview idea was taken from the website [petfinder.com](https://www.petfinder.com/).
-- The footer idea was taken from the coders coffehouse project.
-- The sign up page idea was taken from the [Love Running Project](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode)
-
-### Content
-
-- The text for the dog overview section was taken from [petfinder.com](https://www.petfinder.com/).
-- Instructions on how to implement form validation on the Sign Up page was taken from [Love Running Project](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode)
-
 ### Media
 
-- The dog photos used on the home page are from [rowpixel.com](https://www.rawpixel.com/)
-- The image used on the home page are from [freepik.com](https://www.freepik.com/)
+- The background image is from [pixabay.com](https://pixabay.com/photos/real-estate-homeownership-homebuying-6688945/)
