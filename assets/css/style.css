@@ -165,7 +165,7 @@ textarea {
     height: 150px;
   }
 
-/* --------------------------------------------> media queries */
+/* --------------------------------------------> media query */
 
 @media only screen and (max-width: 900px){
     .values-area {

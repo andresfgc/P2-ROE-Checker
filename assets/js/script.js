@@ -6,12 +6,6 @@ document.addEventListener('DOMContentLoaded', function(){
             runAnalysis();
         })
     }
-    /*working also pressing enter
-    document.getElementsByClassName('btn-check').addEventListener('keydown', function(event){
-        if (event.key ==='Enter') {
-            calculateAnswer();
-        }
-    })*/
 })
 
 
