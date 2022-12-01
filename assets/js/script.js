@@ -126,8 +126,13 @@ function SendMail() {
         email_id : checkEmail(),
         message : checkMessage(),
     }
+    document.getElementById('fullName').classList.add('hide');
+    document.getElementById('email_id').classList.add('hide');
+    document.getElementById('message').classList.add('hide');
+    document.getElementById('button-message').classList.add('hide');
+    document.getElementById('thank-you-title').textContent = "Thank you for getting in touch!";
+    document.getElementById('thank-you-message').textContent = "We will contact you back within the next 24 hours.";
     emailjs.send("service_ezv0pio", "template_f6ocuwt", params).then(function(res) {
-        alert("success!" + res.status);
     })
 }
 
