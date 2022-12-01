@@ -1,108 +1,133 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">ROE-Checker</h1>
 
-Welcome Andresfgc,
+[View the live project here.](https://andresfgc.github.io/ROE-Checker/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+ROE-Checker is a site that wants to help people achieving their financial goals by measuring the return on equity of a real estate investment.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Responsive Mockup](/media/roe-checker_mockup.PNG)
 
-## Gitpod Reminders
+### Design
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- __Colour Scheme__
 
-`python3 -m http.server`
+  - The three main colours used are blue, white and grey.
 
-A blue button should appear to click: _Make Public_,
+- __Typography__
 
-Another blue button should appear to click: _Open Browser_.
+  - The Merriweather font is used throughout the whole website with Serif as the fallback font.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- __Imagery__
 
-A blue button should appear to click: _Make Public_,
+  - The background image is designed to emphasize the idea of using the ROE Checker specifically for real estate.
 
-Another blue button should appear to click: _Open Browser_.
+### Wireframes
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- __Desktop__
 
-To log into the Heroku toolbelt CLI:
+![wireframes desktop](/media/wireframes_pc.PNG)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- __Mobile__
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![wireframes desktop](/media/wireframes_mobile.PNG)
 
-------
+## Features
 
-## Release History
+### Existing Features
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- __Navigation Bar__
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+  - The responsive navigation bar includes links to the Logo, Home page, Dogs and Sign Up page and it has the same design in all pages.
+  - This nagivation bar allows users to easily navigate between pages. 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Nav Bar](/media/nav_bar.PNG)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- __The landing page image__
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+  - This section separate the navigation bar text and the dog-overview header text giving the user a time to read correctly the website. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![landing page image](/media/landing_page_image.PNG)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- __Dog overview section__
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+  - The dog overview will allow the user to directly see available dogs for adoption.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![dog overview](/media/dog_overview.PNG)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- __Sign Up section__
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+  - This section will allow the user to go directly to the sign up page.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![sign up](/media/sign_up.PNG)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- __Story section__
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+  - This section will allow the user to see some photos of recently adopted dogs.
+  - This user will see to tha value of adoption and get potentially motivated to sign up.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![story section](/media/stories.PNG)
 
-------
+- __Footer__
 
-## FAQ about the uptime script
+  - The footer will allow the user to find and follow the social media sites for Adogme. The links will open a new tab.
 
-**Why have you added this script?**
+![story section](/media/footer.PNG)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- __dog overview dogs page__
 
-**How will this affect me?**
+  - This page offers information on more dogs for adoption.
+  - This will allow the user to see more dogs and get potentially more motivated to sing up for adoption.
+![dog overview dogs page](/media/dog_overview_dogssite.PNG)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- __sign up page__
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+  - This page will allow the user to get signed up to Adogme to get in contact for adoption. The user will be asked to submit their full name, email address, phone number and dog name if the user already know which dog to adopt.
+![sign up page](/media/signup_page.PNG)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- __Features left to implement__
 
-**So….?**
+  - The user will be redirected to sign up each time they click on a dog image, name or the adopt me button.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Testing
 
-**Can I opt out?**
+For ideal responsive design five media queries were included and tested across diferent browsers and devices. The grid function was used to offer a solid appareance when showing the dog overview.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Using a concrete high of 190px and different images it was possible to provide similar image sizes for each dog container.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Validator Testing
 
-**Anything more?**
+- HTML
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fandresfgc.github.io%2Fp1%2Findex.html)
 
----
+- CSS
 
-Happy coding!
+  - No errors were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
+
+## Deployment
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/andresfgc/p1)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+3. In the left-nav-menu click on "page".
+4. Under "Source", click the dropdown called "None" and select "Main" and save.
+5. The page will automatically refresh.
+6. wait a few minutes and then reload the page, you will see the now published site [link](https://andresfgc.github.io/p1/) in the "GitHub Pages" section.
+
+## Credits
+
+### Structure
+- The head structure idea was taken from the [Love Running Project](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode)
+- The body dog overview idea was taken from the website [petfinder.com](https://www.petfinder.com/).
+- The footer idea was taken from the coders coffehouse project.
+- The sign up page idea was taken from the [Love Running Project](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode)
+
+### Content
+
+- The text for the dog overview section was taken from [petfinder.com](https://www.petfinder.com/).
+- Instructions on how to implement form validation on the Sign Up page was taken from [Love Running Project](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode)
+
+### Media
+
+- The dog photos used on the home page are from [rowpixel.com](https://www.rawpixel.com/)
+- The image used on the home page are from [freepik.com](https://www.freepik.com/)
