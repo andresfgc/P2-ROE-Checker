@@ -1,6 +1,6 @@
 <h1 align="center">ROE-Checker</h1>
 
-[View the live project here.](https://andresfgc.github.io/ROE-Checker/)
+[View the live project here.](https://andresfgc.github.io/P2-ROE-Checker/)
 
 ROE-Checker is a site that wants to help people achieving their financial goals by measuring the return on equity of a real estate investment.
 
